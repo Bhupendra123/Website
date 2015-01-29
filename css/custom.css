@@ -1,0 +1,191 @@
+body{
+	background-image:url("../newImages/backgroundImg.png");
+	background-size:100% 100%;
+}
+.top-number{
+	text-align:right;
+}
+input.search-form{
+	width: 67px;
+}
+.header-navbar{	
+	background-image:url("../newImages/navbar_strip.png");
+	border-bottom: 4px solid #c52d2f;
+}
+.searchStyle{
+	float:right;
+	height: 25px;
+	width: 25px;
+	background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, #c52d2f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #c52d2f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
+	text-align: center;
+}
+#navigation{
+	height: 40px;	
+}
+#navigation .bottom-bar{
+    width:988px;
+	margin: 0px auto;
+}
+#topnav{
+	list-style: none;
+	height: 39px;
+}
+#topnav .head{
+	font-family: 'Open Sans', sans-serif;'
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: rgb(255, 255, 255) 0px 0px 3px;
+}
+.bottom-bar ul{
+	margin:0px;
+	padding: 0;
+}
+#topnav li{
+	position: relative;
+	float: left;
+	background: url(../newImages/menu-line.png) no-repeat left top;
+	z-index: 10;
+	margin-left: 1px;
+}
+#topnav li a{
+	color: #FFFFFF;
+	display: block;
+	line-height: 40px;
+	padding: 0 22px;
+}
+a {
+text-decoration: none;
+}
+#topnav li a:hover{
+    background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 rgb(241, 16, 16)*/
+    background: -o-linear-gradient(red, #c52d2f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #c52d2f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
+}
+#topnav li a:focus{
+    background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, #c52d2f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #c52d2f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
+	text-shadow: rgb(46, 46, 46) 0px 4px 5px;
+}
+#topnav li a.SelectedTab{
+    background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, #c52d2f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #c52d2f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
+	text-shadow: rgb(46, 46, 46) 0px 4px 5px;
+}
+h2.alterHead{
+	color: #FEFEFE;
+	background: #DC1E1E url(../newImages/h1-gray-bg.gif) repeat-x bottom;
+	height: 40px;
+	padding-left: 12px;
+	margin-bottom: 10px;
+	font-size: 24px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	height: 53px;
+	line-height: 26px;
+	width: 638px;
+}
+#keySolution{
+	display: block;
+	height: 340px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+#keySolution #htabs{
+	border: 1px solid #d9d9d9;
+	position: absolute;
+	width: 638px;
+	background: #F8F7F7;
+}
+#keySolution .tabs{
+	float: left;
+	width: 200px;
+}
+#keySolution ul,li{
+	list-style: none;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	margin: 0px;
+}
+#keySolution .tabs li{
+	background: url(../newImages/hvr-tab-button.png) left top no-repeat;
+	color: #333;
+	height: 85px;
+	width: 207px;
+	cursor: pointer;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 16px;
+	border-right: 1px solid #DEDEDE;
+	font-weight: bold;
+}
+#keySolution .tabs li img{
+	float: left;
+	padding-right: 10px;
+}
+#keySolution .tabs li p{
+	float: left;
+	font-size: 13px;
+	width: 150px;
+	line-height: 14px;
+}
+#keySolution .tabs li.active{ 
+	background: url(../newImages/hvr-tab-button-over.png) left top no-repeat;
+	font-weight: bold;
+	border: none;
+	width: 234px;
+	padding-right: 20px;
+	color: #FFFFFF;
+}
+#keySolution .htabs-content-wrap{
+	float: left;
+	overflow: hidden;
+	width: 430px;
+	height: 300px;
+	padding-left: 20px;
+}
+#keySolution .htabs-scroll{
+	width: 410px;
+	height: 340px;
+}
+#keySolution .content{
+	width: 410px;
+	height: 300px;
+}
+#keySolution .content img{
+	float: right;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+#keySolution .content p{
+	font-size: 12px;
+	padding: 7px 7px 0 26px;
+	line-height: 18px;
+}
+#keySolution .htabs-scroll ul{
+	float: left;
+	padding: 10px 0px 0px 21px;
+	font-size: 12px;
+}
+#keySolution .htabs-scroll li{
+	background: url(../newImages/red-bullet-small.gif) no-repeat left center;
+	padding-left: 15px;
+	line-height: 20px;
+}
+#keySolution .htabs-scroll li a{
+	color: #389FD8;
+	text-decoration:none;
+}
+#main-slider {
+	margin-top: 136px;
+}
