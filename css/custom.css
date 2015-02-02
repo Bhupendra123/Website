@@ -32,6 +32,11 @@ input.search-form{
 #topnav{
 	list-style: none;
 	height: 39px;
+	width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    margin: auto;
+	padding-left: 0;
 }
 #topnav .head{
 	font-family: 'Open Sans', sans-serif;'
@@ -188,4 +193,54 @@ h2.alterHead{
 }
 #main-slider {
 	margin-top: 136px;
+}
+#main-slider .active .progress_bar{
+	height:4px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	line-height: 0;
+}
+#main-slider .active .progress_bar.shine span {
+	position: relative;
+	line-height: 0;
+}
+#main-slider .active .progress_bar.orange span {
+	background-color: #c52d2f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#c52d2f), to(#FF0003));
+	background-image: -webkit-linear-gradient(top, #c52d2f, #FF0003);
+	background-image: -moz-linear-gradient(top, #c52d2f, #FF0003);
+	background-image: -ms-linear-gradient(top, #c52d2f, #FF0003);
+	background-image: -o-linear-gradient(top, #c52d2f, #FF0003);
+	background-image: linear-gradient(top, #c52d2f, #FF0003);
+}
+#main-slider .active .progress_bar span {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+#main-slider .active .progress_bar.shine span::after {
+	content: '';
+	opacity: .7;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	animation: animate_shine 3s ease-out infinite;
+	-webkit-animation: animate_shine 3s ease-out infinite;
+	-moz-animation: animate_shine 3s ease-out infinite;
+}
+@keyframes animate_shine {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+@-webkit-keyframes animate_shine { 
+	0% {width: 0;}
+    100% {width: 100%;}
+}
+@-moz-keyframes animate_shine {
+	0% {width: 0;}
+    100% {width: 100%;}
 }
