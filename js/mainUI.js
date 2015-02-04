@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 	//#main-slider
 	$(function(){
 		$('#main-slider').carousel({
@@ -13,4 +13,12 @@ $( document ).ready(function() {
 			scrollTop: $("body").offset().top
 		}, 500);
 	});
+	// Login
+	$('#login-trigger').click(function(){
+		$(this).next('#login-content').slideToggle();
+		$(this).toggleClass('active');          
+		
+		if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;');
+		  else $(this).find('span').html('&#x25BC;');
+    });
 });
