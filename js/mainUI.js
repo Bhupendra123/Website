@@ -13,7 +13,8 @@ $(document).ready(function () {
             scrollTop: $("body").offset().top
         }, 500);
     });
-    
+
+    // How can YOU Benefit from kRADb
     var total_tabs = 4;
     var content_height = 300;
     jQuery("#htabs .htabs-content-wrap").scrollTop(0);
@@ -27,5 +28,14 @@ $(document).ready(function () {
                     jQuery("#htabs .htabs-content-wrap").stop().animate({ scrollTop: content_height * (i - 1) }, 500);
                 }
         }
+    });
+
+    // Login
+    $('#login-trigger').click(function () {
+        $(this).next('#login-content').slideToggle();
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;');
+        else $(this).find('span').html('&#x25BC;');
     });
 });
