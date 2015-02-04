@@ -1,16 +1,31 @@
-$( document ).ready(function() {
-	//#main-slider
-	$(function(){
-		$('#main-slider').carousel({
-			interval: 3000
-		});
-	});
-	
-	//goto top
-	$('.gototop').click(function(event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: $("body").offset().top
-		}, 500);
-	});
+$(document).ready(function () {
+    //#main-slider
+    $(function () {
+        $('#main-slider').carousel({
+            interval: 3000
+        });
+    });
+
+    //goto top
+    $('.gototop').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("body").offset().top
+        }, 500);
+    });
+    
+    var total_tabs = 4;
+    var content_height = 300;
+    jQuery("#htabs .htabs-content-wrap").scrollTop(0);
+
+    $("#htabs .tabs li").hover(function () {
+        if (jQuery(this).hasClass('active') == false) {
+            jQuery("#htabs .tabs li").removeClass('active');
+            jQuery(this).addClass('active');
+            for (i = 1; i <= total_tabs; i++)
+                if (jQuery(this).hasClass('tab' + i) == true) {
+                    jQuery("#htabs .htabs-content-wrap").stop().animate({ scrollTop: content_height * (i - 1) }, 500);
+                }
+        }
+    });
 });
