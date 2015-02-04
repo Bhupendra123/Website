@@ -23,7 +23,6 @@ input.search-form{
     background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
 	text-align: center;
 }
-
 .kRADbLogo img {
 	width:194px;
 }
@@ -61,10 +60,6 @@ input.search-form{
 #navigation{
 	height: 40px;	
 }
-#navigation .bottom-bar{
-    width:988px;
-	margin: 0px auto;
-}
 #navigation ul{
 	list-style: none;
 }
@@ -84,15 +79,12 @@ input.search-form{
 	font-variant: normal;
 	text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
-
 .listBtn {
 	line-height: normal;
 	font-size: 18px;
 	float: right;
 	margin-top: 1px;
-	display:none;
 }
-
 .animenu__nav__child {
 	position: absolute;
 	z-index: 1;
@@ -117,7 +109,6 @@ input.search-form{
 	border-bottom: 1px solid #515151;
 	display:none;
 }
-
 .animenu__nav__child > li:first-child > a:after {
 	content: '';
 	position: absolute;
@@ -137,7 +128,6 @@ input.search-form{
 	border: 0;
 }
 .animenu__nav__child li.selected, .animenu__nav__child li:hover {
-	border-color: #515151;
 	background: #c52d2f;
 	background: -webkit-linear-gradient(red, #c52d2f);
 	background: -o-linear-gradient(red, #c52d2f);
@@ -149,13 +139,14 @@ input.search-form{
 	color: #000;
 	text-shadow: rgb(0, 0, 0) 0px 0px 3px;
 }*/
-.secondMenu{
+#secondMenu{
 	float: right;
 	margin-top: -39px;
 	padding-left: 0;
 	margin-bottom: 0px;
+	display:none;
 }
-.secondMenu.active .btn-default:hover, .secondMenu.active .btn-default:focus, .secondMenu.active .btn-default:active, .secondMenu.active .btn-default{
+#secondMenu.active .btn-default:hover, #secondMenu.active .btn-default:focus, #secondMenu.active .btn-default:active, #secondMenu.active .btn-default{
 	color: #fff;
 	/*background-color: #c52d2f;*/
 	border-color: #c52d2f;
@@ -172,10 +163,10 @@ input.search-form{
 	ul#topnav li:nth-child(7), ul#topnav li:nth-child(8), ul#topnav li:nth-child(9){
 		display:none;
 	}
-	.animenu__nav__child li:first-child,.animenu__nav__child li:nth-child(5),.animenu__nav__child li:nth-child(6),.animenu__nav__child li:nth-child(7){
+	#secondMenu.active .animenu__nav__child li:first-child, #secondMenu.active .animenu__nav__child li:nth-child(5), #secondMenu.active .animenu__nav__child li:nth-child(6), #secondMenu.active .animenu__nav__child li:nth-child(7){
 		display:block;
 	}
-	.listBtn {
+	#secondMenu {
 		display:block;
 	}
 }
@@ -183,16 +174,39 @@ input.search-form{
 	ul#topnav li:nth-child(6){
 		display:none;
 	}
+	#secondMenu.active .animenu__nav__child li:nth-child(4) {
+		display:block;
+	}
 }
 
 @media (max-width: 635px){
 	ul#topnav li:nth-child(5){
 		display:none;
 	}
+	#secondMenu.active .animenu__nav__child li:nth-child(3) {
+		display:block;
+	}
 }
 @media (max-width: 535px){
 	ul#topnav li:nth-child(4){
 		display:none;
+	}
+	#secondMenu.active .animenu__nav__child li:nth-child(2) {
+		display:block;
+	}
+	
+}
+@media (max-width: 465px){
+	#main-slider {
+		margin-top: 184px !important;
+	}
+}
+@media (max-width: 400px){
+	#navigation {
+		display:none;
+	}
+	#main-slider {
+		margin-top: 144px !important;
 	}
 }
 .bottom-bar ul{
@@ -213,23 +227,11 @@ input.search-form{
 	padding: 0 22px;
 }
 a {
-text-decoration: none;
+	text-decoration: none;
 }
-#topnav li a:hover{
-    background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 rgb(241, 16, 16)*/
-    background: -o-linear-gradient(red, #c52d2f); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(red, #c52d2f); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
-}
-#topnav li a:focus{
-    background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(red, #c52d2f); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(red, #c52d2f); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
-	text-shadow: rgb(46, 46, 46) 0px 4px 5px;
-}
-#topnav li a.SelectedTab{
-    background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 */
+#topnav li a.SelectedTab, #topnav li a:hover, #topnav li a:focus{
+    background:#c52d2f;
+	background: -webkit-linear-gradient(red, #c52d2f); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(red, #c52d2f); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(red, #c52d2f); /* For Firefox 3.6 to 15 */
     background: linear-gradient(red, #c52d2f); /* Standard syntax (must be last) */
@@ -342,7 +344,7 @@ h2.alterHead{
 	text-decoration:none;
 }
 #main-slider {
-	margin-top: 136px;
+	margin-top: 131px;
 }
 #main-slider .active .progress_bar{
 	height:4px;
@@ -409,7 +411,6 @@ ul.loginWrapper {
 	font-size: 12px;
 	line-height: 18px; 
 }
-
 ul.loginWrapper li {
 	float: left; 
 }
@@ -425,18 +426,14 @@ ul.loginWrapper #login-trigger{
   color: #444;
   text-shadow: 0 1px 0 #fff; 
 }
-
-
 ul.loginWrapper #login-trigger {
   border-radius: 3px;
 }
-
 ul.loginWrapper #login-trigger:hover,
 ul.loginWrapper #login .active,
 ul.loginWrapper #signup a:hover {
   background: #fff;
 }
-
 ul.loginWrapper #login-content {
   display: none;
   position: absolute;
@@ -449,12 +446,10 @@ ul.loginWrapper #login-content {
   box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
   border-radius: 3px 0 3px 3px;
 }
-
 ul.loginWrapper li #login-content {
   right: 0;
   width: 225px;  
 }
-
 #inputs input {
   background: #f1f1f1;
   padding: 3px 5px;
@@ -464,7 +459,6 @@ ul.loginWrapper li #login-content {
   border-radius: 3px;
   box-shadow: 0 1px 1px #ccc inset;
 }
-
 #inputs input:focus {
   background-color: #fff;
   border-color: #e8c291;
@@ -474,7 +468,6 @@ ul.loginWrapper li #login-content {
 #login #actions {
   margin: 5px 0 0 0;
 }
-
 #login #submit {    
   background-color: #d14545;
   background-image: linear-gradient(top, #e97171, #d14545);
@@ -494,29 +487,24 @@ ul.loginWrapper li #login-content {
 	font-weight: bold;
   color: #fff;
 }
-
 #login #submit:hover,
 #login #submit:focus {    
   background-color: #e97171;
   background-image: linear-gradient(top, #d14545, #e97171);
 } 
-
 #login #submit:active {   
   outline: none;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
 }
-
 #login #submit::-moz-focus-inner {
   border: none;
 }
-
 #login label {
   float: right;
   line-height: 27px;
   color: #444;
   margin-bottom: 0;
 }
-
 #login label input {
   position: relative;
   top: 2px;

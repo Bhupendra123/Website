@@ -38,4 +38,18 @@ $(document).ready(function () {
         if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;');
         else $(this).find('span').html('&#x25BC;');
     });
+	
+	/* ----------------- Page navigation start --------------------- */
+	$('#topnav li').click(function(){
+		$('a').removeClass('SelectedTab');
+		$(this).find('a').addClass('SelectedTab');
+	});
+	$('#secondMenu').click(function(){
+		$(this).toggleClass('active');
+	});
+	$('#secondMenu .animenu__nav__child li').click(function(){
+		$('li').removeClass('selected');
+		$(this).addClass('selected');
+	});
+	/* ----------------- Page navigation end --------------------- */
 });
