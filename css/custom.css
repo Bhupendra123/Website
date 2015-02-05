@@ -525,7 +525,7 @@ ul.loginWrapper #login-content {
   position: absolute;
   top: 20px;
   right: 0;
-  z-index: 999;    
+  z-index: 9999;    
   background: #fff;
   background-image: linear-gradient(top, #fff, #eee);  
   padding: 10px;
