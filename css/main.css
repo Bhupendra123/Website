@@ -209,9 +209,11 @@ body > section {
  margin: 0;
  margin-right:66px;
 }
-
+ul.social-share{
+	line-height: 25px;
+}
 ul.social-share li {
-  display: inline-block;
+	display: inline-block;
 }
 
 ul.social-share li a {

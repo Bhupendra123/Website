@@ -51,5 +51,17 @@ $(document).ready(function () {
 		$('li').removeClass('selected');
 		$(this).addClass('selected');
 	});
+	$('#menuBtn').click(function(){
+		$(this).toggleClass('selected');
+		$('.menuItems').toggleClass('showMenu');
+		//$('#headerLogo').toggleClass('hideLogo');
+	});
+	$('.menuItems li').click(function(){
+		$('li').removeClass('active');
+		$(this).addClass('active');
+		$('#menuBtn').toggleClass('selected');
+		$('.menuItems').toggleClass('showMenu');
+		//$('#headerLogo').toggleClass('hideLogo');
+	});
 	/* ----------------- Page navigation end --------------------- */
 });

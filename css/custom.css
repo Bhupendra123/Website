@@ -28,6 +28,7 @@ input.search-form{
 }
 .socialMediaHeader {
 	margin-top: 10px;
+	line-height:25px;
 }
 @media (max-width: 768px){
 	.kRADbLogo{
@@ -89,10 +90,8 @@ input.search-form{
 	position: absolute;
 	z-index: 1;
 	right:0px;
-	margin: 45px 0 0 0;
+	margin: 44px 0 0 0;
 	background-color: #191919;
-}
-.animenu__nav__child{
 	padding:0;
 }
 .animenu__nav__child li{
@@ -178,7 +177,76 @@ input.search-form{
 		display:block;
 	}
 }
-
+#headerLogo.hideLogo{
+	visibility:visible;
+}
+#menuBtn{
+	display:none;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+#menuBtn.selected {
+	background: #c52d2f;
+	border-color: #c52d2f;
+	background: -webkit-linear-gradient(red, #c52d2f);
+	background: -o-linear-gradient(red, #c52d2f);
+	background: -moz-linear-gradient(red, #c52d2f);
+	background: linear-gradient(red, #c52d2f);
+	text-shadow: rgb(46, 46, 46) 0px 4px 5px;
+	color:#fff;
+}
+.menuItems {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	top:141px;
+	z-index: 999;
+	/*border-top: 1px solid #515151;*/
+	display:none;
+}
+.menuItems.showMenu{
+	display:none;
+}
+/*.menuItems li:first-child{
+	border-bottom: 0;
+}*/
+.menuItems li{
+	padding-left:10px;
+	background-color: #191919;
+	border-bottom: 1px solid #515151;
+}   
+.menuItems li a{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	text-shadow: rgb(255, 255, 255) 0px 0px 3px;
+	color: #FFFFFF;
+	display: block;
+	line-height: 34px;
+}
+.menuItems > li:first-child > a:after {
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	left: 20px;
+	top: -6px;
+	border: 6px solid transparent;
+	border-top: 0;
+	border-bottom-color: inherit;
+}
+.menuItems li:hover,.menuItems li.active{
+	color: #fff;
+	/*background-color: #c52d2f;*/
+	border-color: #515151;
+	background: -webkit-linear-gradient(red, #c52d2f);
+	background: -o-linear-gradient(red, #c52d2f);
+	background: -moz-linear-gradient(red, #c52d2f);
+	background: linear-gradient(red, #c52d2f);
+	text-shadow: rgb(46, 46, 46) 0px 4px 5px;
+}
 @media (max-width: 635px){
 	ul#topnav li:nth-child(5){
 		display:none;
@@ -198,15 +266,33 @@ input.search-form{
 }
 @media (max-width: 465px){
 	#main-slider {
-		margin-top: 184px !important;
+		margin-top: 181px !important;
 	}
 }
 @media (max-width: 400px){
 	#navigation {
 		display:none;
 	}
+	.kRADbLogo {
+		margin-left: 10px;
+	}
+	.socialMediaHeader  {
+		margin-right: 10px;
+	}
+	#menuBtn{
+		display:block;
+	}
 	#main-slider {
-		margin-top: 144px !important;
+		margin-top: 141px !important;
+	}
+	.menuItems.showMenu{
+		display:block;
+	}
+	.btn{
+		padding: 4px 10px;
+	}
+	#headerLogo.hideLogo{
+		visibility:hidden;
 	}
 }
 .bottom-bar ul{
