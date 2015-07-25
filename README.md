@@ -4,7 +4,7 @@ kRADb Website
 On logo change css for - #main-slider, .kRADbLogo img
 
 http://www.angleritech.com/
-file:///G:/Bootstrap%20projects/corlate/about-us.html
+http://www.Bootstrap%20projects/corlate/about-us.html
 http://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/
 http://www.templatemo.com/templates/templatemo_401_sprint/
 http://designscrazed.org/free-responsive-html5-css3-templates/

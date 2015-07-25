@@ -1,0 +1,120 @@
+.text{
+  font-size:22px;
+  padding-top: 15px;
+ }
+
+#contectUs_banner a {
+  color:#ffffff;
+  text-decoration: none;
+}
+#contectUs_container {
+  font-size: 14px;
+  background:#ffffff;
+  padding:20px;
+}
+.media-body p {
+ color:#8d9095;
+}
+#contectUs_container h5 {
+ font-size:18px;
+ color:#373a41;
+}
+
+#contectUs_container h6 {
+ font-size:14px;
+ color:black;
+}
+#contectUs_container h3 {
+  font-size: 24px;
+  color: #18121a;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+#Simple_form {
+  background: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#Simple_form  h3 {
+  font-size: 24px;
+  color: #18121a;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+ }
+ .input_type{
+  border-top-right-radius:5px;
+  border-top-left-radius: 5px;
+ }
+ .input_type_second{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.coustm_right{
+      float: right;
+      margin-top: -25px;
+      margin-right: 10px;
+      color: #dbdbdb;
+}
+.coustom_textarea{
+   border-radius: 6px;
+   width: 100%;
+   border: 1px solid #C0BEBE;
+   padding: 6px 12px;
+}
+.btn-file {
+      position:relative;
+      overflow: hidden;
+      background: #545457;
+      padding:10px 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+}
+.btn-file:hover {
+      background: #62626B;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: black;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+#cont_adrs {
+  float: left;
+}
+.cont_img {
+  float: left;
+  font-size: 18px;
+}
+.cont {
+  width: 100%;
+   padding-left: 30px;
+}
+#googleMap{height:300px; width:100%; margin-top:130px;}

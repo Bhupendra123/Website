@@ -12,11 +12,10 @@
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>  
     <script src="js/mainUI.js"></script>
-	
 </head>
 <style></style>		
 <script></script>
-<body class="homepage" >
+<body>
     <header id="header">
 		<nav class="header-navbar navbar navbar-inverse navbar-fixed-top" role="banner">
 			<div class="top-bar">
@@ -24,9 +23,8 @@
 					<div class="row">
 						<div class="col-sm-6 col-xs-6 kRADbLogo">                    
 							<a class="navbar-brand" href="#" id="headerLogo">
-								<img src="images/KRADB-newLogo.png" alt="logo">
+								<img src="images/kradbLogoBlack.png" alt="logo">
 							</a>
-							
 						</div>
 						<div class="col-sm-6 col-xs-6 socialMediaHeader">
 							<div class="col-sm-12 col-xs-12" style="padding-right: 0;">
@@ -47,6 +45,7 @@
 															<input type="submit" id="submit" value="Log in" />
 															<label><input type="checkbox" checked="checked"> Keep me signed in</label>
 														</fieldset>
+                                                        <a href="#registrationModal" class="Register_with_us" data-toggle="modal">Register with us</a>
 													</form>
 												</div>                     
 											</li>
@@ -80,118 +79,198 @@
 						</a>
 						<ul class="menuItems">
 							<li><a href="#"></a></li>
-							<li><a href="#" >HOME</a></li>
-							<li><a href="#">Service</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#" >Technologies</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Carrier</a></li>
-							<li><a href="#">Support</a></li>
-							<li><a href="#">About Us</a></li>
+							<li><a href="#">HOME</a></li>
+							<li><a href="Services.html">Service</a></li>
+							<li><a href="Products.html">Products</a></li>
+							<li><a href="Technologies.html" >Technologies</a></li>
+							<li><a href="Portfolio.html">Portfolio</a></li>
+							<li><a href="Career.html">Carrier</a></li>
+							<li><a href="Support.html">Support</a></li>
+							<li><a href="AboutUS.html">About Us</a></li>
 							<li><a class="head" href="#">Contact Us</a></li>
 						</ul>						
 					</div>
 				</div><!--/.container-->
 			</div><!--/.top-bar-->
-            <div id="navigation"> 			    
-                <div class="container">
-                    <ul id="topnav">
-						<li>
-							<a class="head SelectedTab" href="#"><span class="glyphicon glyphicon-home" style="margin-right:7px;"></span>HOME</a>
-						</li>
-						<li><a class="head" href="#" >Service</a></li>
-						<li><a class="head" href="#">Products</a></li>
-						<li><a class="head" href="#" >Technologies</a></li>
-						<li><a class="head" href="#">Portfolio</a></li>
-						<li><a class="head" href="#">Carrier</a></li>
-						<li><a class="head" href="#">Support</a></li>
-						<li><a class="head" href="#">About Us</a></li>
-						<li><a class="head" href="#">Contact Us</a></li>
-						<li style="height: 40px;width: 2px;"></li>
-					</ul>
-					<ul id="secondMenu">
-						<li style="position:relative;">
-							<a class="btn btn-default listBtn" aria-label="Left Align">
-								<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+    <div id="navigation"> 			    
+       <div class="container">
+               <ul id="topnav">
+		            <li>
+	                   <a class="head SelectedTab" href="#"><span class="glyphicon glyphicon-home" style="margin-right:7px;"></span>HOME</a>
+		            </li>
+		            <li><a class="head" href="Services.html" >Service</a></li>
+	                <li><a class="head" href="Products.html">Products</a></li>
+	                <li><a class="head" href="Technologies.html" >Technologies</a></li>
+		            <li><a class="head" href="Portfolio.html">Portfolio</a></li>
+		            <li><a class="head" href="Career.html">Carrier</a></li>
+		           <li><a class="head" href="Support.html">Support</a></li>
+		           <li><a class="head" href="AboutUS.html">About Us</a></li>
+		           <li><a class="head" href="ContactUs.html">Contact Us</a></li>
+		          <li style="height: 40px;width: 2px;"></li>
+	        </ul>
+	        <ul id="secondMenu">
+		         <li style="position:relative;">
+			          <a class="btn btn-default listBtn" aria-label="Left Align">
+				        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+			         </a>
+                    <ul class="animenu__nav__child" style="padding-left: 0;">
+	                       <li><a href="#"></a></li>
+	                       <li><a class="head" href="Technologies.html" >Technologies</a></li>
+	                      <li><a href="Portfolio.html">Portfolio</a></li>
+	                      <li><a href="Career.html">Carrier</a></li>
+	                      <li><a href="Support.html">Support</a></li>
+	                      <li><a href="AboutUS.html">About Us</a></li>
+	                      <li><a class="head" href="#">Contact Us</a></li>
+                   </ul>
+				</li>
+		   </ul>
+          </div>
+       </div><!--/.container-->
+    </nav><!--/nav-->		
+</header>
+
+<header id="header1"style="display:none;">
+		<nav class="header-navbar navbar navbar-inverse navbar-fixed-top" role="banner" style="background: black;  height: 75px;">
+			<div class="top-bar2">
+				      <div id="" class="container">    
+							<a class="navbar-brand" href="#" id="headerLogo2" style="position: fixed;">
+								<img src="images/kradbLogowhite.png" alt="logo">
 							</a>
-							<ul class="animenu__nav__child" style="padding-left: 0;">
-								<li><a href="#"></a></li>
-								<li><a class="head" href="#" >Technologies</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">Carrier</a></li>
-								<li><a href="#">Support</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a class="head" href="#">Contact Us</a></li>
-							</ul>
-						</li>
-					</ul>
+						    <a id="menuBtn2"" class="btn btn-default listBtn">
+							<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+						</a>
+						<ul class="menuItems2">
+							<li><a href="#"></a></li>
+							<li><a href="#" >HOME</a></li>
+							<li><a href="Services.html">Service</a></li>
+							<li><a href="Products.html">Products</a></li>
+							<li><a href="Technologies.html" >Technologies</a></li>
+							<li><a href="Portfolio.html">Portfolio</a></li>
+							<li><a href="Career.html">Carrier</a></li>
+							<li><a href="Support.html">Support</a></li>
+							<li><a href="AboutUS.html">About Us</a></li>
+							<li><a class="head" href="#">Contact Us</a></li>
+						</ul>						
+				</div><!--/.container-->
+			</div><!--/.top-bar-->
+			<div id="navigation2"> 			    
+                  <ul id="topnav2">
+		            <li>
+	                   <a class="head SelectedTab" href="#"><span class="glyphicon glyphicon-home" style="margin-right:7px;"></span>HOME</a>
+		            </li>
+		            <li><a class="head" href="Services.html" >Service</a></li>
+	                <li><a class="head" href="Products.html">Products</a></li>
+	                <li><a class="head" href="Technologies.html" >Technologies</a></li>
+		            <li><a class="head" href="Portfolio.html">Portfolio</a></li>
+		            <li><a class="head" href="Career.html">Carrier</a></li>
+		            <li><a class="head" href="Support.html">Support</a></li>
+		            <li><a class="head" href="AboutUS.html">About Us</a></li>
+		            <li><a class="head" href="ContactUs.html">Contact Us</a></li>
+		            <li style="height: 40px;width: 2px;"></li>
+	             </ul>
+	           <ul id="secondMenu2">
+		         <li style="position:relative;">
+			          <a class="btn btn-default listBtn1" aria-label="Left Align">
+				        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+			         </a>
+                    <ul class="animenu__nav__child" style="margin-right:7px;">
+	                       <li><a href="#"></a></li>
+                           <li><a class="head" href="Technologies.html" >Technologies</a></li>
+	                      <li><a href="Portfolio.html">Portfolio</a></li>
+	                      <li><a href="Career.html">Carrier</a></li>
+	                      <li><a href="Support.html">Support</a></li>
+	                      <li><a href="AboutUS.html">About Us</a></li>
+	                      <li><a class="head" href="#">Contact Us</a></li>
+                   </ul>
+				</li>
+		   </ul>
+          </div>
+    </nav><!--/nav-->					
+</header> 
+<div id="registrationModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Registered with Kradb</h4>
                 </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->		
-    </header>
-	<section id="main-slider" class="no-margin">
-        <div class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" style="height:450px;">
-                <div class="item active" style="background-image: url(images/slider/bg1.jpg); ">
-                    <div class="container">
-                        <div class="row slide-margin">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
-                                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="User Name *" class="form-field">
+                    <input type="text" placeholder="E-mail *" class="form-field">
+                    <input type="password" placeholder="Password *" class="form-field">
+                    <input class="form-field" type="number" placeholder="Telephone">
+                    <input class="form-field" type="text" placeholder="Country">
+                </div>
+                <div class="modal-footer" style="border: none;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary"  style="margin-top:0px;">Sign-In</button>
+                </div>
+            </div>
+        </div>
+ </div>
+<section id="main-slider" class="no-margin">
+          <div class="carousel slide">
+               <ol class="carousel-indicators">
+                     <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                     <li data-target="#main-slider" data-slide-to="1"></li>
+                    <li data-target="#main-slider" data-slide-to="2"></li>
+              </ol>
+         <div class="carousel-inner" style="height:450px;">
+                 <div class="item active" style="background-image: url(images/slider/bg1.jpg); ">
+                       <div class="container">
+                           <div class="row slide-margin">
+                                <div class="col-sm-6">
+                                     <div class="carousel-content">
+                                         <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                         <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                         <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    </div>
+                              </div>
+                             <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                     <div class="slider-img">
+                                           <img src="images/slider/img1.png" class="img-responsive">
+                                     </div>
                             </div>
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="slider-img">
-                                    <img src="images/slider/img1.png" class="img-responsive">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-					<div class="progress_bar orange shine">
-						<span style="width: 100%;"></span>
-					</div>
+                           </div>
+                       </div>
+					  <div class="progress_bar orange shine">
+						   <span style="width: 100%;"></span>
+					 </div>
                 </div><!--/.item-->
                 <div class="item" style="background-image: url(images/slider/bg2.jpg)">
-                    <div class="container">
-                        <div class="row slide-margin">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="slider-img">
-                                    <img src="images/slider/img2.png" class="img-responsive">
-                                </div>
-                            </div>
+                       <div class="container">
+                            <div class="row slide-margin">
+                                <div class="col-sm-6">
+                                     <div class="carousel-content">
+                                          <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                          <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                           <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    </div>
+                               </div>
+                              <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                    <div class="slider-img">
+                                         <img src="images/slider/img2.png" class="img-responsive">
+                                   </div>
+                             </div>
 
-                        </div>
-                    </div>
-					<div class="progress_bar orange shine">
-						<span style="width: 100%;"></span>
+                          </div>
+                     </div>
+					 <div class="progress_bar orange shine">
+						    <span style="width: 100%;"></span>
 					</div>
                 </div><!--/.item-->
                 <div class="item" style="background-image: url(images/slider/bg3.jpg)">
-                    <div class="container">
-                        <div class="row slide-margin">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="slider-img">
+                       <div class="container">
+                            <div class="row slide-margin">
+                                 <div class="col-sm-6">
+                                      <div class="carousel-content">
+                                             <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                             <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                             <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                     </div>
+                              </div>
+                              <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                 <div class="slider-img">
                                     <img src="images/slider/img3.png" class="img-responsive">
                                 </div>
                             </div>
@@ -209,102 +288,266 @@
         <a class="next hidden-xs" href="#main-slider" data-slide="next">
             <i class="fa fa-chevron-right"></i>
         </a>
-    </section><!--/#main-slider-->
-	 <section id="feature" >
-        <div class="container">
-           <div class="center wow fadeInDown">
-                <h2 style="color:#c52d2f">WELCOME TO THE NEW KNOW HOW</h2>
-                <p class="lead">You have technology concerns. But your real concerns are greater than technology. They are about keeping your business growing, evolving and thriving. Those are the real issues. And that's why we have made those concerns our concerns.</p><p> Our brilliant minds team will help you solve technology and business challenges with the New Know How. IT consulting usually ends when your immediate technology concerns are addressed. But we don’t stop until you have a competitive advantage. Only kRADb gives you the option to not just plan for the future but also define it for your industry.</p>
-            </div>
-			<div class="grid">
-				<h2 class="alterHead">How can YOU Benefit from kRADb</h2>
-				<div id="keySolution">
-				   <div id="htabs">
-				     <ul class="tabs">
-						  <li class="tab1 active"><img src="newImages/product-companies.png"> <p>For Software Product<br> Development Companies</p></li>
-						  <li class="tab2"><img src="newImages/software-product.png"> <p>For Software Development &amp; Consulting Companies</p></li>
-						  <li class="tab3"><img src="newImages/interactive.png"> <p>For Interactive Media &amp;  <br> Digital Marketing Companies</p></li>
-						  <li class="tab4 last"><br><img src="newImages/corporate.png"><p>For Corporate Clients &amp; SME Clients</p></li>
-                     </ul>
-				     <div class="htabs-content-wrap">
-						<div class="htabs-scroll">
-						 <div class="content">
-							<img src="newImages/01.jpg"> 
-							<p align="justify">If you are an <b>Independent Software Vendor (ISV) / Software Product Development Company</b> or an exciting Technology <b>Start-up</b>, we can partner with you to either augment or outsource your development &amp; testing needs for faster delivery and free up your valuable resources to focus on core business. </p>
+</section><!--/#main-slider-->
 
-							<p align="justify">Our <b>ANGLER HeadStart</b> is a unique <b>Outsourced Product Development (OPD)</b> model - a break-through software outsourcing model of partnering with ISVs and Software Product companies, making us the ideal Product Development Partner for your needs: </p> 
-							<ul>
-								<li><a href="#">Explore Our Software Outsourcing Services</a></li>
-								<li><a href="#">View Technology Skills</a></li>
-								<li><a href="#">Read Case Studies</a></li> 
-							</ul>                    
-					      </div>
-						  <div class="content">
-							<img src="newImages/01.jpg"> 
-							<p align="justify">If you are an <b>Independent Software Vendor (ISV) / Software Product Development Company</b> or an exciting Technology <b>Start-up</b>, we can partner with you to either augment or outsource your development &amp; testing needs for faster delivery and free up your valuable resources to focus on core business. </p>
+<div id="feature">
+       <div class="container">
+                <div class="center wow fadeInDown" style="margin-top:25px;">
+                  <h2 style="color:#c52d2f; font-size:30px;">WELCOME TO THE NEW KNOW HOW</h2>
+                  <p style="font-style:italic; font-size:16px;">You have technology concerns. But your real concerns are greater than technology.
+                     They are about keeping your business growing, evolving and thriving. Those are the real issues. And that's why we have
+                     made those concerns our concerns.
+                     Our brilliant minds team will help you solve technology and business challenges with the New Know How.
+                      IT consulting usually ends when your immediate technology concerns are addressed. But we don't stop until you have a competitive advantage.
+                      Only kRADb gives you the option to not just plan for the future but also define it for your industry.
+                  </p>
+                </div>
+                 
+                <div class="row">
+                    <div class="col-md-9">
+                         <h2 class="largeTxt-strip" style="margin-top:0px;">How can YOU Benefit from KRADB</h2>
+                         <div class="tab-wrap"> 
+                              <div class="media">
+                                   <div class="parrent pull-left">
+                                       <ul class="nav nav-tabs nav-stacked">
+                                           <li class="active"><a href="#tab1" data-toggle="tab">Responsive Web Design</a></li>
+                                           <li class=""><a href="#tab2" data-toggle="tab">Premium Plugin Included</a></li>
+                                          <li class=""><a href="#tab3" data-toggle="tab">Predefine Layout</a></li>
+                                          <li class=""><a href="#tab4" data-toggle="tab">Our Philosopy</a></li>
+                                          <li class=""><a href="#tab5" data-toggle="tab">What We Do?</a></li>
+                                      </ul>
+                                 </div>
 
-							<p align="justify">Our <b>ANGLER HeadStart</b> is a unique <b>Outsourced Product Development (OPD)</b> model - a break-through software outsourcing model of partnering with ISVs and Software Product companies, making us the ideal Product Development Partner for your needs: </p> 
-							<ul>
-								<li><a href="#">Explore Our Software Outsourcing Services</a></li>
-								<li><a href="#">View Technology Skills</a></li>
-								<li><a href="#">Read Case Studies</a></li> 
-							</ul>                    
-					      </div>
-						  <div class="content">
-							<img src="newImages/01.jpg"> 
-							<p align="justify">If you are an <b>Independent Software Vendor (ISV) / Software Product Development Company</b> or an exciting Technology <b>Start-up</b>, we can partner with you to either augment or outsource your development &amp; testing needs for faster delivery and free up your valuable resources to focus on core business. </p>
+                                <div class="parrent media-body">
+                                     <div class="tab-content">
+                                          <div class="tab-pane fade active in" id="tab1">
+                                              <div class="media">
+                                                   <div class="pull-left">
+                                                        <img class="img-responsive" src="images/tab1.png">
+                                                    </div>
+                                                    <div class="media-body">
+                                                          <h2>Adipisicing elit-1</h2>
+                                                          <p>There are many variations of passages of Lorem Ipsum available,
+                                                          but the majority have suffered alteration in some form, by injected humour,
+                                                          or randomised words which don't look even slightly believable.If you are going to use.</p>
+                                                   </div>
+                                             </div>
+                                       </div>
 
-							<p align="justify">Our <b>ANGLER HeadStart</b> is a unique <b>Outsourced Product Development (OPD)</b> model - a break-through software outsourcing model of partnering with ISVs and Software Product companies, making us the ideal Product Development Partner for your needs: </p> 
-							<ul>
-								<li><a href="#">Explore Our Software Outsourcing Services</a></li>
-								<li><a href="#">View Technology Skills</a></li>
-								<li><a href="#">Read Case Studies</a></li> 
-							</ul>                    
-					      </div>
-						  <div class="content">
-							<img src="newImages/01.jpg"> 
-							<p align="justify">If you are an <b>Independent Software Vendor (ISV) / Software Product Development Company</b> or an exciting Technology <b>Start-up</b>, we can partner with you to either augment or outsource your development &amp; testing needs for faster delivery and free up your valuable resources to focus on core business. </p>
+                                     <div class="tab-pane fade" id="tab2">
+                                           <div class="media">
+                                                 <div class="pull-left">
+                                                    <img class="img-responsive" src="images/tab1.png">
+                                                 </div>
+                                                <div class="media-body">
+                                                      <h2>Adipisicing elit-2</h2>
+                                                      <p>There are many variations of passages of Lorem Ipsum available,
+                                                      but the majority have suffered alteration in some form, by injected humour,
+                                                      or randomised words which don't look even slightly believable. If you are going to use.</p>
+                                               </div>
+                                          </div>
+                                   </div>
 
-							<p align="justify">Our <b>ANGLER HeadStart</b> is a unique <b>Outsourced Product Development (OPD)</b> model - a break-through software outsourcing model of partnering with ISVs and Software Product companies, making us the ideal Product Development Partner for your needs: </p> 
-							<ul>
-								<li><a href="#">Explore Our Software Outsourcing Services</a></li>
-								<li><a href="#">View Technology Skills</a></li>
-								<li><a href="#">Read Case Studies</a></li> 
-							</ul>                    
-					      </div>
-					    </div>
-				    </div>
-				   </div>
-				</div>
-			</div>
-            <div class="row" style="text-align: center; margin-top:20px;">
-                <div class="features">    
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-leaf"></i>
-                            <h2>Adipisicing elit</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                                  <div class="tab-pane fade" id="tab3">
+                                        <div class="media">
+                                             <div class="pull-left">
+                                                 <img class="img-responsive" src="images/tab1.png">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>Adipisicing elit-3</h2>
+                                                 <p>There are many variations of passages of Lorem Ipsum available,
+                                                 but the majority have suffered alteration in some form, by injected humour,
+                                                 or randomised words which don't look even slightly believable. If you are going to use.</p>
+                                          </div>
+                                    </div>
+                               </div>
+                                     
+                               <div class="tab-pane fade" id="tab4">
+                                        <div class="media">
+                                              <div class="pull-left">
+                                                 <img class="img-responsive" src="images/tab1.png">
+                                              </div>
+                                             <div class="media-body">
+                                                  <h2>Adipisicing elit-4</h2>
+                                                  <p>There are many variations of passages of Lorem Ipsum available,
+                                                  but the majority have suffered alteration in some form, by injected humour,
+                                                  or randomised words which don't look even slightly believable. 
+                                                  If you are going to use.</p>
+                                            </div>
+                                       </div>
+                               </div>
+
+                              <div class="tab-pane fade" id="tab5">
+                                     <div class="media">
+                                         <div class="pull-left">
+                                              <img class="img-responsive" src="images/tab1.png">
+                                         </div>
+                                         <div class="media-body">
+                                                 <h2>Adipisicing elit-5</h2>
+                                                <p>There are many variations of passages of Lorem Ipsum available,
+                                                but the majority have suffered alteration in some form, by injected humour,
+                                                or randomised words which don't look even slightly believable. If you are going to use.</p>
+                                         </div>
+                                   </div>
+                              </div>
+                           </div>
                         </div>
-                    </div><!--/.col-md-4-->
+                     </div> 
+                  </div> 
+              </div>  
+                     <div class="col-xs-12 col-sm-3 wow fadeInDown">
+                        <div class="testimonial">
+                            <h2 class="largeTxt-strip">Testimonials</h2>
+                             <div class="media testimonial-inner">
+                                <div class="pull-left">
+                                    <img class="img-responsive img-circle" src="images/testimonials1.png">
+                                </div>
+                                <div class="media-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed..</p>
+                                    <span><strong>-John Doe/</strong> Director</span>
+                                </div>
+                             </div>
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-cogs"></i>
-                            <h2>Sed do eiusmod</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div><!--/.col-md-4-->
+                             <div class="media testimonial-inner">
+                                <div class="pull-left">
+                                    <img class="img-responsive img-circle" src="images/testimonials1.png">
+                                </div>
+                                <div class="media-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed..</p>
+                                    <span><strong>-John Doe/</strong> Director</span>
+                                </div>
+                             </div>
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-heart"></i>
-                            <h2>Labore et dolore</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
                         </div>
-                    </div><!--/.col-md-4-->
-                </div><!--/.services-->
-            </div><!--/.row-->    
-        </div><!--/.container-->
-    </section><!--/#feature-->	
+                </div>
+   
+         </div>            
+    </div>
+</div>
+
+
+<div id="WorkwithusSection">
+     <div class="container">
+         <div style="font-size:30px;  line-height: 40px; color: #292941;">Why Should You Work With Us?</div>
+             <div class="row"style="padding-top:30px;">
+                 
+                <div class="col-md-3 text_col ">
+                       <img src="images/home_why_one_to_one.jpg"  width="31" height="33">
+                       <div class=" text_wrap">
+                            <div><b>ONE-TO-ONE INTERACTION</b></div>
+                            <p> Meet our experienced Project Managers for their expert guidance in your web development services.</p>
+                     </div>
+                 </div>
+                <div class="col-md-3 text_col ">
+                       <img src="images/home_why_seamless.jpg"  width="31" height="33">
+                      <div class=" text_wrap">
+                            <div><b>SEAMLESS COMMUNICATION</b></div>
+                            <p>Direct and easy communication using Skype / Phone / Email, to make certain that we always keep in touch.</p>
+                     </div>
+                 </div>
+                <div class="col-md-3 text_col ">
+                       <img src="images/home_why_satisfaction.jpg"  width="31" height="33">
+                       <div class=" text_wrap">
+                             <div><b>SATISFACTION GUARANTEED</b></div>
+                             <p>We continually strive for perfection in order to help you fulfill your business goals and obtain best ROI.</p>
+                     </div>
+                 </div>
+                <div class="col-md-3 text_col ">
+                       <img src="images/home_why_project-maaaagement0.jpg"  width="31" height="33">
+                      <div class=" text_wrap">
+                             <div><b>PROFESSIONAL PROJECT MANAGEMENT</b></div>
+                             <p>Online Project Management System which helps you keep track of your project just at any point of time you need.</p>
+                     </div>
+                 </div>
+                <div class="col-md-3 text_col ">
+                       <img src="images/home_why_hourly.jpg"  width="31" height="33">
+                       <div class=" text_wrap">
+                             <div><b>HOURLY or FIXED RATES</b></div>
+                             <p>Strict adherence to Quality and Deadline is what makes our Web Design Services your best choice.</p>
+                     </div>
+                 </div>
+                <div class="col-md-3 text_col ">
+                       <img src="images/home_why_ontime.jpg"  width="31" height="33">
+                       <div class=" text_wrap">
+                             <div><b>ON-TIME DELIVERY</b></div>
+                             <p>We have streamlined project deployment process, which helps execute all our web development services on time.</p>
+                     </div>
+                 </div>
+               <div class="col-md-3 text_col ">
+                       <img src="images/home_why_nda.jpg"  width="31" height="33">
+                        <div class=" text_wrap">
+                             <div><b>SECURITY (NDA)</b></div>
+                             <p>We respect our client’s confidentiality and sign Non Disclosure Agreement for all our web development services.</p>
+                     </div>
+                 </div>
+                <div class="col-md-3 text_col ">
+                       <img src="images/home_why_full-ownership.jpg" width="31" height="33">
+                      <div class=" text_wrap">
+                          <div><b>FULL OWNERSHIP</b></div>
+                           <p>You retain the copyrights of your work which includes all Intellectual Rights and Source Codes. We do not reuse or resell them.</p>
+                       </div>
+                 </div>
+           </div>
+    </div>
+</div> 
+
+          
+<div id="text_col">
+    <div class="container">
+         <div class="row" style="padding-bottom: 5px;padding-top:5px;">
+                <div class="col-md-3 ">
+                      <div class="text_wrap">Contact us</div>
+                      <div style="font-size:17px; margin-bottom:5px;">Kradb Intuitive</div>
+                      <div style="font-size:12px;">
+                          Ph:+1 201 633 4050 <br />
+                          22A, Street No-14, <br />
+                          Sarojani Park Shastri Nagar <br />
+                          Nirman vihar (East-Delhi)-110031
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="text_wrap">Inside Kradb</div>
+                  <ul>
+                      <li><a href="Services.html">Service</a></li>
+                      <li><a href="Products.html">Products</a></li>
+                      <li><a href="Technologies.html">Technologies</a></li>
+                      <li><a href="Portfolio.html">Portfolio</a></li>
+                      <li><a href="AboutUS.html">About Us</a></li>
+                  </ul>
+                 </div>
+
+                  <div class="col-md-3 ">
+                      <div class="text_wrap">Support</div>
+                      <ul>
+                         <li><a href="Support.html">Support</a></li>
+                         <li><a href="Support.html">Maintenance</a></li>
+                         <li><a href="Support.html">FAQ</a></li>
+                         <li><a href="#">Documentation</a></li>
+                      </ul>
+                  </div>
+                  
+                 <div class="col-md-3 ">
+                      <div class="text_wrap">Career</div>
+                      <div style="line-height:1.5;">Join our team and learn how we grew to become one of the top mobile app development companies worldwide.</div>
+                      <br />
+                      <br />
+                      <div class="button-2 button-hiring">We're hiring!
+                       <span>
+                        <img src="newImages/green-arrow.png" style="margin-left: 15px;">
+                       </span>
+                      </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+         Copyright © 2015 kRADb Pvt. Ltd. All Rights Reserved.
+    </div>
+      <div id="toTop" class="btn btn-info"><i class="glyphicon glyphicon-chevron-up"></i></div> 
+</div>
+
 </body>
 </html>

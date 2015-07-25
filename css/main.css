@@ -185,7 +185,7 @@ body > section {
 
 .top-bar {
   padding: 10px 0 5px 0;
-  background: #191919;
+  background:#ffffff;
   border-bottom: 1px solid #222;
   line-height: 28px;
 }
@@ -546,7 +546,6 @@ input.search-form:focus {
 }
 
 #feature {
-  background: #f2f2f2;
   padding-bottom: 40px;
 }
 
@@ -674,10 +673,10 @@ input.search-form:focus {
 }
 
 .services-wrap {
-  padding: 40px 30px;
+  padding: 20px 20px;
   background: #fff;
   border-radius: 4px;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 
 .services-wrap h3 {
@@ -914,7 +913,7 @@ a.accordion-toggle  i{
 }
 
 .tab-wrap{
-  border:1px solid #e6e6e6;
+  border:1px solid #D3CFCF;
   margin-bottom: 20px;
 }
 
@@ -935,12 +934,11 @@ a.accordion-toggle  i{
 }
 
 .testimonial-inner {
-  color:#858586;
   font-size: 14px;
 }
 
 .testimonial-inner .pull-left{
-  border-right: 1px solid #e7e7e7;
+  border-right: 1px solid #615A5A;
   padding-right: 15px;
   position: relative;
 }
@@ -952,9 +950,9 @@ a.accordion-toggle  i{
   height: 9px;
   top: 50%;
   margin-top: -5px;
-  background: #FFF;
+  background: white;
   -webkit-transform: rotate(45deg);
-  border: 1px solid #e7e7e7;
+  border: 1px solid #7C7979;
   right: -5px;
   border-left: 0 none;
   border-bottom: 0 none;
@@ -1195,6 +1193,7 @@ a.accordion-toggle  i{
 .single-profile-top, 
 .single-profile-bottom  {
   border: 1px solid #ddd;
+  border-radius: 5px;
   padding: 15px;
   position: relative;
 }
@@ -1331,7 +1330,7 @@ ul.social_icons li  a i{
 
 .team-bar {
   margin-bottom: 15px;
-  margin-top: 30px;
+  margin-top: 15px;
   position: relative;
 }
 
@@ -1947,7 +1946,7 @@ ul.social_icons li  a i{
 
 .form-group .form-control {
   padding: 7px 12px;
-  border-color:#f2f2f2;
+  border-color:#C0BEBE;
   box-shadow: none;
 }
 
